@@ -20,7 +20,6 @@ python-dateutil==2.8.1
 python-dotenv==0.14.0
 pytz==2013.7
 requests==2.23.0
-scipy==0.13.0b1
 selenium==3.141.0
 six==1.14.0
 style==1.1.0
