@@ -42,7 +42,6 @@ def post_jobs():
                         webhook = DiscordWebhook(url=webhook_urls, title='New job posting added!') 
                     embed = DiscordEmbed(title="Click here", description=submission.title, color=242424, url=submission.url)
                     webhook.add_embed(embed)
-                    airtable.insert({'title': submission.title, 'url': submission.url, 'author': submission.author.name, 'type': 'Misc'})
                     response = webhook.execute()
     except:
         post_jobs()
